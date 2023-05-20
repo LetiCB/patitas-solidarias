@@ -22,6 +22,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 700;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .social-media {
     width: 100%;
@@ -54,3 +55,77 @@ body {
     color: #ED9B00;
     font-size: 0.8rem;
 }
+
+
+/* --- Contacto --- */
+
+.form-contenedor {
+    margin: 3% auto;
+    padding: 3%;
+    width: 60%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+.form-contenedor label {
+    display: block;
+    margin: 2% 10%;
+    color: #6C4F3D;
+}
+.contacto-input {
+    width: 80%;
+    align-self: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ED9B00;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+}
+.contacto-input:focus {
+    border: 3px solid #ED9B00;
+    outline: none;
+}
+.contacto-textarea {
+    width: 80%;
+    align-self: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ED9B00;
+    border-radius: 5px;
+    height: 120px;
+    outline: none;
+}
+.contacto-textarea:focus {
+    border: 3px solid #ED9B00;
+    outline: none;
+}
+.boton-contenedor {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background: #EFD850;
+    background-image: -webkit-linear-gradient(top, #EFD850, #ED9B00);
+    background-image: -moz-linear-gradient(top, #EFD850, #ED9B00);
+    background-image: -ms-linear-gradient(top, #EFD850, #ED9B00);
+    background-image: -o-linear-gradient(top, #EFD850, #ED9B00);
+    background-image: linear-gradient(to bottom, #EFD850, #ED9B00);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 12px 25px 12px 25px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+} 
+.btn:hover {
+    background: #ED9B00;
+    text-decoration: none;
+}
+

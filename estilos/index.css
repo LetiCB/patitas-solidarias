@@ -6,7 +6,63 @@ a {
     text-decoration: none;
   }
 
-
+/* --- En Adopción --- */
+.animales-seccion {
+    margin: 30px auto;
+    padding: 10px;
+}
+.animales-titulo {
+    text-align: center;
+    margin: 20px auto;
+    color: #6C4F3D;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.fa-solid, .fas  {
+    color:#EFD850;
+}
+.animales-contenedor {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.tarjeta {
+    margin: 15px;
+    background-color: #ED9B00;
+    border-radius: 10px;
+    padding: 25px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.foto img {
+    border: solid 2px #fff;
+    border-radius: 5px;
+    width: 210px;
+    height: 220px;
+    object-fit: cover;
+}
+.nombre {
+    color: #fff;
+    margin: 15px auto 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;   
+    text-align: center;
+}
+.telefono {
+    margin: 2px auto;
+    color: #fff;
+    text-align: center;
+}
 
 /* --- Footer --- */
 

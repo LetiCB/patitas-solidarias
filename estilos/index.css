@@ -6,7 +6,8 @@ a {
     text-decoration: none;
   }
 
-/* --- En Adopción --- */
+/* --- En Adopción y Perdidos --- */
+
 .animales-seccion {
     margin: 30px auto;
     padding: 10px;
@@ -16,6 +17,7 @@ a {
     margin: 20px auto;
     color: #6C4F3D;
     font-size: 1.3rem;
+    font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 700;
@@ -112,8 +114,9 @@ a {
 }
 .copyright {
     margin: 10px auto;
-    color: #ED9B00;
+    color: #c78508;
     font-size: 0.8rem;
+    font-weight: 500;
 }
 
 

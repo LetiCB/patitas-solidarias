@@ -4,7 +4,20 @@ body {
 a {
     color: inherit;
     text-decoration: none;
-  }
+}
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.navbar-light .navbar-brand {
+    color: #6C4F3D;
+}
+.navbar-brand {
+    font-family: 'Shadows Into Light Two';
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
 
 /* --- En Adopción y Perdidos --- */
 
@@ -98,7 +111,7 @@ a {
     font-size: 2.3rem;
     background: #fff;
     border-radius: 50%;
-    padding: 15px;
+    padding: 33px;
     margin: 15px;
     display: flex;
     justify-content: center;
@@ -111,6 +124,11 @@ a {
 }
 .redes-sociales div:hover {
   border: 3px solid #ED9B00;
+}
+.red-icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .copyright {
     margin: 10px auto;

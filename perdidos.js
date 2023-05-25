@@ -1,7 +1,7 @@
 // --- APIs --- //
 
 // Conectar a la API de gatos y solicitar 5 urls de imágenes
-fetch('https://api.thecatapi.com/v1/images/search?limit=5')
+fetch('https://api.thecatapi.com/v1/images/search?limit=5&mime_types=jpg,png')
       .then(response => response.json())
       .then(data => data.map(imageData => imageData.url))
       .then(data => {

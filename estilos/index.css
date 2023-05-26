@@ -28,7 +28,6 @@ button:focus {
 }
 
 /* --- Navegador --- */
-
 .navbar-light .navbar-brand {
     color: #6C4F3D;
 }
@@ -41,29 +40,11 @@ button:focus {
 
 /* --- Header --- */
 .header-contenedor {
-    margin: 0;
-    padding: 25px 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background: linear-gradient(#FEBF00, #FCC200);
 }
 .header-imagen {
-    width: 48%;
-}
-.header-imagen img {
     width: 100%;
     height:auto;
-}
-.header-info {
-    width: 52%;
-    align-self: center;
-    padding-right: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .slogan {
     margin: 10px 20px 40px;

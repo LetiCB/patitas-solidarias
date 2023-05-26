@@ -7,6 +7,11 @@ h3 {
     letter-spacing: 0.1em;
     font-weight: 700;
 }
+h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -95,10 +100,63 @@ button:focus {
     color:#FEBF00;
 }
 
+/* --- Información --- */
+.info-contenedor {
+    margin: 30px 0px;
+    padding: 25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+.info-contenedor h3 {
+    margin: 15px auto 25px;
+    color: #c78508;
+}
+.informacion {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.info-icono-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-icono-contenedor h4 {
+    color: #c78508;
+}
+.info-icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    background: #fff;
+    border-radius: 50%;
+    padding: 33px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+    transition: border-color 0.3s ease;
+}
+.info-icono:hover {
+  border: 3px solid #ED9B00;
+}
+.info-icono img {
+    height: 80px;
+    transition: transform 0.6s ease;
+}
+.info-icono img:hover {
+    transform: scale(0.85);
+}  
 
-
-
-  
 /* --- En Adopción y Perdidos --- */
 
 .animales-seccion {

@@ -67,6 +67,37 @@ button:focus {
     padding: 25px;
     background-color: #EEE16C;
 }
+
+/* --- Botón para volver arriba --- */
+.volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #FEBF00;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.volver-arriba i {
+    color: #fff;
+    font-size: 20px;
+}
+.volver-arriba.show {
+    opacity: 1;
+    visibility: visible;
+}
+.volver-arriba:hover {
+    background-color: #FCC200;
+}
+
 /* --- Navegador --- */
 .navbar-light .navbar-brand {
     color: #6C4F3D;

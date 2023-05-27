@@ -1,3 +1,4 @@
+/* --- Elementos html --- */
 body {
     margin: 0px;
 }
@@ -42,6 +43,12 @@ button:focus {
     justify-content: center;
     align-items: center;
 }
+.contenedor-directorios {
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .contenedor-dos-partes {
     margin: 30px 0px;
     padding: 25px;
@@ -82,6 +89,7 @@ button:focus {
     width: 150px;
     height: 150px;
     margin: 25px;
+    flex-shrink: 0;
 }
 .fondo-claro {
     background-color: #EEE16C;
@@ -91,6 +99,9 @@ button:focus {
 }
 .mas-padding {
     padding: 50px 10px;
+}
+.sin-padding-arriba {
+    padding-top: 0 !important;
 }
 
 /* --- Botón para volver arriba --- */
@@ -194,6 +205,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .info-icono-contenedor h4 {
     color: #c78508;
@@ -242,6 +254,9 @@ button:focus {
 .borde-oscuro {
     border: 10px solid #EEE16C;
 }
+.borde-oscuro-angosto {
+    border: 6px solid #EEE16C;
+}
 .fuente-blanca {
     color: #fff;
 }
@@ -267,8 +282,6 @@ button:focus {
 /* --- Footer --- */
 .gran-contenedor h3 {
     margin: 20px auto;
-    color: #fff;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .redes-sociales {
     color: #ED9B00;

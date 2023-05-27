@@ -28,9 +28,23 @@ button:focus {
 }
 
 /* --- Contenedores --- */
-.contenedor-dos-partes {
+.gran-contenedor {
     margin: 0;
-    padding: 25px 0px;
+    padding: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.contenedor-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-dos-partes {
+    margin: 30px 0px;
+    padding: 25px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -53,8 +67,6 @@ button:focus {
 }
 .imagen-circular {
     margin: 30px auto;
-    width: 350px;
-    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,10 +74,23 @@ button:focus {
     overflow: hidden; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+.imagen-grande {
+    width: 350px;
+    height: 350px;
+}
+.imagen-chica {
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+}
 .fondo-claro {
-    margin: 30px 0px;
-    padding: 25px;
     background-color: #EEE16C;
+}
+.fondo-oscuro {
+    background-color: #EFD850;
+}
+.mas-padding {
+    padding: 50px 10px;
 }
 
 /* --- Botón para volver arriba --- */
@@ -111,6 +136,7 @@ button:focus {
 
 /* --- Header --- */
 .header-contenedor {
+    margin: 0;
     background: linear-gradient(#FEBF00, #FCC200);
 }
 .header-imagen {
@@ -154,12 +180,8 @@ button:focus {
 
 /* --- Información --- */
 .info-contenedor {
-    margin: 30px 0px;
+    margin: 50px 0px;
     padding: 25px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
 }
 .info-contenedor h3 {
     margin: 15px auto 25px;
@@ -167,10 +189,6 @@ button:focus {
 }
 .informacion {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 .info-icono-contenedor {
     display: flex;
@@ -218,6 +236,9 @@ button:focus {
 .borde-blanco {
     border: 10px solid white;
 }
+.borde-blanco-angosto {
+    border: 6px solid white;
+}
 .borde-oscuro {
     border: 10px solid #EEE16C;
 }
@@ -231,32 +252,26 @@ button:focus {
     margin: 30px auto 2px;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-.parte-info p {
+.texto-seccion {
     padding: 30px;
     text-align: justify;
 }
+.efecto-imagenes {
+    transition: transform 0.9s ease;
+}  
+.efecto-imagenes:hover {
+    transform: scale(0.90);
+    border: 10px solid #ED9B00;
+}
 
 /* --- Footer --- */
-.footer-contenedor {
-    margin: 0;
-    padding: 15px 0px;
-    background-color: #EFD850;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.footer-contenedor h3 {
+.gran-contenedor h3 {
     margin: 20px auto;
     color: #fff;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .redes-sociales {
-    width: 100%;
     color: #ED9B00;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 .redes-sociales div{
     font-size: 2.3rem;

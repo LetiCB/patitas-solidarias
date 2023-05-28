@@ -8,17 +8,17 @@ fetch('https://api.thecatapi.com/v1/images/search?limit=5&mime_types=jpg,png')
         // Obtener un arreglo con 10 urls de fotos de gatos
         let fotosDeGatos = data;
         let nombreGato = ["Lucy", "Lola", "Rocky", "Ted", "Tomi"];
-        let telGato = ["+54 123 45678", "+54 234 56789", "+54 345 67890", "+54 456 78901", "+54 567 89012"];
+        let provinciaGato = ["Santa Cruz", "Chubut", "Salta", "Buenos Aires", "San Juan"];
 
-        // Crear un arreglo de objetos con el teléfono de contacto, nombre y foto de cada gato perdido.
+        // Crear un arreglo de objetos con provincia, nombre y foto de cada gato perdido.
         let nombreGatoPerdido = nombreGato;
-        let telGatoPerdido = telGato;
+        let provinciaGatoPerdido = provinciaGato;
         let fotosDeGatosPerdido = fotosDeGatos;
         let gatosPerdidos = [];
-        for (let i = 0; i < telGatoPerdido.length; i++) {
+        for (let i = 0; i < provinciaGatoPerdido.length; i++) {
             let gatoPerdido = {
                 nombre: nombreGatoPerdido[i],
-                telefono: telGatoPerdido[i],
+                provincia: provinciaGatoPerdido[i],
                 foto: fotosDeGatosPerdido[i],
             };
             gatosPerdidos.push(gatoPerdido);
@@ -29,10 +29,15 @@ fetch('https://api.thecatapi.com/v1/images/search?limit=5&mime_types=jpg,png')
             contenedor.innerHTML = dataDeAnimales
             .map((animal) => {
                 return `
-                <div class="tarjeta">
-                    <div class="foto"><img src="${animal.foto}" alt="foto de ${animal.nombre}"/></div>
-                    <div class="nombre">${animal.nombre}</div>
-                    <div class="telefono">${animal.telefono}</div>
+                <div class="tarjeta fondo-claro">
+                    <div class="foto"><img class="efecto-imagenes" src="${animal.foto}" alt="foto de ${animal.nombre}"/></div>
+                    <h3 class="nombre fuente-blanca sombra">${animal.nombre}</h3>
+                    <div class="fuente-media">${animal.provincia}</div>
+                    <div class="iconos-oscuros">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
                 </div>`;
             })
             .join(" ");
@@ -58,17 +63,17 @@ fetch('https://dog.ceo/api/breeds/image/random/6')
         // Obtener un arreglo con 6 urls de fotos de perros
         let fotosDePerros = data.message;
         let nombrePerro = ["Sultán", "Princesa", "Chano", "Cucky", "Sally", "Ariela"];
-        let telPerro = ["+54 345 67890", "+54 456 78901", "+54 567 89012", "+54 677 90123", "+54 789 01234", "+54 890 12345"];
+        let provinciaPerro = ["Chubut", "La Pampa", "Corrientes", "Tucuman", "Entre Rios", "La Rioja"];
 
-        // Crear un arreglo de objetos con el teléfono de contacto, nombre y foto de cada perro perdido.
+        // Crear un arreglo de objetos con provincia, nombre y foto de cada perro perdido.
         let nombrePerroPerdido = nombrePerro;
-        let telPerroPerdido = telPerro;
+        let provinciaPerroPerdido = provinciaPerro;
         let fotosDePerrosPerdido = fotosDePerros;
         let perrosPerdidos = [];
-        for (let i = 0; i < telPerroPerdido.length; i++) {
+        for (let i = 0; i < provinciaPerroPerdido.length; i++) {
             let perroPerdido = {
                 nombre: nombrePerroPerdido[i],
-                telefono: telPerroPerdido[i],
+                provincia: provinciaPerroPerdido[i],
                 foto: fotosDePerrosPerdido[i],
             };
             perrosPerdidos.push(perroPerdido);
@@ -79,10 +84,15 @@ fetch('https://dog.ceo/api/breeds/image/random/6')
             contenedor.innerHTML = dataDeAnimales
             .map((animal) => {
                 return `
-                <div class="tarjeta">
-                    <div class="foto"><img src="${animal.foto}" alt="foto de ${animal.nombre}"/></div>
-                    <div class="nombre">${animal.nombre}</div>
-                    <div class="telefono">${animal.telefono}</div>
+                <div class="tarjeta fondo-claro">
+                    <div class="foto"><img class="efecto-imagenes" src="${animal.foto}" alt="foto de ${animal.nombre}"/></div>
+                    <h3 class="nombre fuente-blanca sombra">${animal.nombre}</h3>
+                    <div class="fuente-media">${animal.provincia}</div>
+                    <div class="iconos-oscuros">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
                 </div>`;
             })
             .join(" ");

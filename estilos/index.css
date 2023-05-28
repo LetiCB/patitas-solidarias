@@ -95,7 +95,7 @@ button:focus {
 
 /* --- Espacios --- */
 .sin-margen {
-    margin: 0;
+    margin: 0 auto;
 }
 .con-margen-arriba-abajo {
     margin: 30px auto;
@@ -105,6 +105,9 @@ button:focus {
 }
 .margen-titulo {
     margin: 25px auto 15px;
+}
+.margen {
+    margin: 30px auto 2px;
 }
 .con-padding {
     padding: 25px;
@@ -118,9 +121,12 @@ button:focus {
 .w100 {
     width: 100%;
 }
+.w80 {
+    width: 80%;
+}
 .animales-seccion {
     margin: 30px auto;
-    padding: 10px;
+    padding: 50px;
 }
 .animales-contenedor {
     margin: 20px auto;
@@ -141,8 +147,7 @@ button:focus {
     padding: 30px;
     text-align: justify;
 }
-.sombra-margen {
-    margin: 30px auto 2px;
+.sombra {
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .copyright {
